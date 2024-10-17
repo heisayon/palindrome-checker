@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "palindrome-checker-backend": {
+      "main": "src/palindrome-checker-backend/main.mo",
+      "type": "motoko"
+    },
+    "palindrome-checker-frontend": {
+      "dependencies": [
+        "palindrome-checker-backend"
+      ],
+      "source": [
+        "src/palindrome-checker-frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
